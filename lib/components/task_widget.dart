@@ -48,7 +48,7 @@ class _TaskWidgetState extends State<TaskWidget> {
     return Padding(
       padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
       child: Container(
-        width: double.infinity,
+        width: 400.0,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).secondaryBackground,
           borderRadius: BorderRadius.circular(24.0),
