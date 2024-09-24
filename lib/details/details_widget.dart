@@ -125,6 +125,7 @@ class _DetailsWidgetState extends State<DetailsWidget> {
                                     size: 30.0,
                                   ),
                                   onPressed: () async {
+                                    _model.editingMode = !_model.editingMode;
                                     safeSetState(() {});
                                   },
                                 ),
