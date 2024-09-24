@@ -81,7 +81,7 @@ class _LoginWidgetState extends State<LoginWidget>
                       borderRadius: BorderRadius.circular(8.0),
                       child: Image.asset(
                         'assets/images/nicks-tasks-high-resolution-logo-transparent.png',
-                        width: 200.0,
+                        width: 205.0,
                         fit: BoxFit.contain,
                       ),
                     ),
