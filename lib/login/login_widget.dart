@@ -1,4 +1,5 @@
 import '/auth/firebase_auth/auth_util.dart';
+import '/backend/api_requests/api_calls.dart';
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -772,8 +773,12 @@ class _LoginWidgetState extends State<LoginWidget>
                                     createdTime: getCurrentTimestamp,
                                   ));
 
+                              await SendEmailToUserCloudFunctionsAPICall.call(
+                                to: _model.emailTextController.text,
+                              );
+
                               context.goNamedAuth(
-                                  'onboarding', context.mounted);
+                                  'WelcomePage', context.mounted);
                             },
                             text: 'Sign up',
                             options: FFButtonOptions(

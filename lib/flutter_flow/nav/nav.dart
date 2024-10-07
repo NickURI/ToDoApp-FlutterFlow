@@ -117,6 +117,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               ParamType.Document,
             ),
           ),
+        ),
+        FFRoute(
+          name: 'WelcomePage',
+          path: '/welcomePage',
+          builder: (context, params) => const WelcomePageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
